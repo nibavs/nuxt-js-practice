@@ -2,5 +2,13 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxt/eslint', 'usebootstrap'],
+  css: ['bootstrap/dist/css/bootstrap.min.css'],
+  app: {
+    head: {
+      title: 'Nuxt practice',
+      meta: [
+        { name: 'charset', content: 'utf-8'},
+      ]
+    }
+  },
 })

@@ -1,6 +1,10 @@
 <script setup lang="ts">
-import type { Userr } from '~/types/user';
 
+interface Userr {
+    id: number,
+    firstName: string,
+    lastName: string
+}
 
 defineProps<{
     user: Userr

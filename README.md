@@ -5,3 +5,4 @@
 3. Layouts (default and custom), nuxt modules injection.
 4. UseFetch composable has been used.
 5. Components. Props. Errorvue.
+6. SEO. useHead. nuxt.config.ts data setting. HTML tags <Head>

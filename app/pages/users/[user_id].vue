@@ -1,5 +1,9 @@
 <script setup lang="ts">
-import type { Userr } from '~/types/user';
+
+interface Userr {
+  firstName: string,
+  lastName: string
+}
 
 const { user_id } = useRoute().params
 
