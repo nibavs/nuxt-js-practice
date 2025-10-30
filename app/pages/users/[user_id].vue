@@ -1,4 +1,6 @@
 <script setup lang="ts">
+import type { Userr } from '~/types/user';
+
 const { user_id } = useRoute().params
 
 
@@ -7,14 +9,14 @@ definePageMeta({
 })
 
 
-const { data } = await useFetch(`https://dummyjson.com/users/${user_id}`)
+const { data } = await useFetch<Userr>(`https://dummyjson.com/users/${user_id}`)
 </script>
 
 
 <template>
   <div>
     <h1>User info:</h1>
-    <p>{{ data.firstName }} {{ data.lastName }}</p>
+    <p>{{ data?.firstName }} {{ data?.lastName }}</p>
   </div>
 </template>
 

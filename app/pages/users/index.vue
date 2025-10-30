@@ -1,19 +1,19 @@
 <script setup lang="ts">
+import type { Userr } from '~/types/user';
+
 definePageMeta({
   layout: 'users'
 })
 
-interface Userr {
-  id: number,
-  firstName: string,
-  lastName: string
+interface ApiResponse {
+  users: Userr[]
 }
 
 
 const url = 'https://dummyjson.com/users'
 
-const { data } = await useFetch(url);
-const users = ref<Userr[]>(data.value.users);
+const { data } = await useFetch<ApiResponse>(url);
+const users = ref<Userr[]>(data.value?.users || []);
 
 </script>
 
