@@ -3,8 +3,8 @@
     <header class="bg-dark p-3">
       <ul class="nav">
         <li class="nav-item"><NuxtLink class="nav-link text-white" to="/">Main</NuxtLink></li>
-        <li class="nav-item"><NuxtLink class="nav-link text-white" to="contact">Contact</NuxtLink></li>
-        <li class="nav-item"><NuxtLink class="nav-link text-white" to="users">Users</NuxtLink></li>
+        <li class="nav-item"><NuxtLink class="nav-link text-white" to="/contact">Contact</NuxtLink></li>
+        <li class="nav-item"><NuxtLink class="nav-link text-white" to="/users">Users</NuxtLink></li>
       </ul>
     </header>
 
