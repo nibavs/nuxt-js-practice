@@ -22,7 +22,7 @@ const users = ref<Userr[]>(data.value?.users || []);
     <h1>All users</h1>
     <ul class="d-flex list-unstyled gap-3 flex-wrap">
       <li v-for="user in users" :key="user.id">
-        <NuxtLink :to="`users/${user.id}`" class="btn btn-dark">{{ user.firstName }}  {{ user.lastName  }}</NuxtLink>
+        <UserLink :user="user"/>
       </li>
     </ul>
   </div>
